@@ -1,3 +1,28 @@
+<h3>Импорт проекта:</h3> 
+<ol>
+<li> Клонируйте проект </li>
+<li> Выполните команду "composer install" </li>
+<li> Измените файл .env в соответствиями с настройками вашей БД </li>
+<li> Произведите миграции "php artisan migrate" </li>
+<li> Запуститк сервер "php artisan serve" </li>
+</ol>
+
+
+<h3>Описание API:</h3>
+<ul>
+<li><b>POST:</b> "/register" - регистрация пользователя </li>
+<li><b>POST:</b> "/login" - авторизация пользователя</li>
+<li><b>GET:</b> "/tasks" - фильтрация и сортировка задач</li>
+<li><b>POST:</b> "/tasks" - создание новой задачи</li>
+<li><b>GET:</b> "/tasks/<id>" - показать задачу по id</li>
+<li><b>PUT:</b> "/tasks/<id>" - обновить задачу по id</li>
+<li><b>DELETE:</b> "/tasks/<id>" - удалить задачу по id</li>
+</ul>
+
+Например:</br> 
+</br><b>POST</b> http://localhost:8000/api/register - требуется имя, пароль и email пользователя для регистрации
+</br><b>GET</b> http://localhost:8000/api/tasks - требуется header "Accept" -> "application/json" и токен пользователя
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
